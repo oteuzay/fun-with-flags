@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		8B1E8BA32AC7012F0067C74D /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1E8BA22AC7012F0067C74D /* GameViewController.swift */; };
+		8B1E8BA62AC730FC0067C74D /* BG.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 8B1E8BA52AC730FC0067C74D /* BG.jpg */; };
 		8BDD8A552AC5BB52001ACDE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDD8A542AC5BB52001ACDE4 /* AppDelegate.swift */; };
 		8BDD8A572AC5BB52001ACDE4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDD8A562AC5BB52001ACDE4 /* SceneDelegate.swift */; };
 		8BDD8A592AC5BB52001ACDE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDD8A582AC5BB52001ACDE4 /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		8B1E8BA22AC7012F0067C74D /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		8B1E8BA52AC730FC0067C74D /* BG.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = BG.jpg; sourceTree = "<group>"; };
 		8BDD8A512AC5BB52001ACDE4 /* fun-with-flags.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "fun-with-flags.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BDD8A542AC5BB52001ACDE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BDD8A562AC5BB52001ACDE4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +41,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8B1E8BA42AC730E50067C74D /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				8B1E8BA52AC730FC0067C74D /* BG.jpg */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
 		8BDD8A482AC5BB52001ACDE4 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +97,7 @@
 		8BDD8A6A2AC5BBDC001ACDE4 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8B1E8BA42AC730E50067C74D /* Images */,
 				8BDD8A5D2AC5BB54001ACDE4 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -162,6 +173,7 @@
 			files = (
 				8BDD8A612AC5BB54001ACDE4 /* LaunchScreen.storyboard in Resources */,
 				8BDD8A5E2AC5BB54001ACDE4 /* Assets.xcassets in Resources */,
+				8B1E8BA62AC730FC0067C74D /* BG.jpg in Resources */,
 				8BDD8A5C2AC5BB52001ACDE4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
