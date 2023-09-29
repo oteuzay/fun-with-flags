@@ -54,10 +54,40 @@
                     <view key="view" contentMode="scaleToFill" id="Olh-bt-gsG">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YR7-gO-xRx">
+                                <rect key="frame" x="84.666666666666686" y="219" width="224" height="114"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="us"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="saS-vi-ybT">
+                                <rect key="frame" x="84.666666666666686" y="353" width="224" height="114"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="us"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q7p-Tk-1iP">
+                                <rect key="frame" x="84.666666666666686" y="490" width="224" height="114"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="us"/>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Vye-Rc-xET"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="q7p-Tk-1iP" firstAttribute="top" secondItem="saS-vi-ybT" secondAttribute="bottom" constant="23" id="CNB-eG-8XA"/>
+                            <constraint firstItem="YR7-gO-xRx" firstAttribute="top" secondItem="Vye-Rc-xET" secondAttribute="top" constant="163" id="PRG-YK-XZU"/>
+                            <constraint firstItem="q7p-Tk-1iP" firstAttribute="centerX" secondItem="saS-vi-ybT" secondAttribute="centerX" id="Ty6-Qb-a15"/>
+                            <constraint firstItem="YR7-gO-xRx" firstAttribute="centerX" secondItem="Vye-Rc-xET" secondAttribute="centerX" id="hep-mA-yAX"/>
+                            <constraint firstItem="saS-vi-ybT" firstAttribute="centerX" secondItem="YR7-gO-xRx" secondAttribute="centerX" id="lXQ-N0-mMm"/>
+                            <constraint firstItem="saS-vi-ybT" firstAttribute="top" secondItem="YR7-gO-xRx" secondAttribute="bottom" constant="20" id="qGJ-t9-B8L"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Game" id="W3M-CQ-cJH"/>
+                    <connections>
+                        <outlet property="button1" destination="YR7-gO-xRx" id="zYw-TY-11q"/>
+                        <outlet property="button2" destination="saS-vi-ybT" id="cTU-vv-Rtg"/>
+                        <outlet property="button3" destination="q7p-Tk-1iP" id="GDR-jj-s5u"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="181-f1-mz8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -84,6 +114,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="us" width="200" height="100"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
