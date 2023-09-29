@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8B1E8BA32AC7012F0067C74D /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B1E8BA22AC7012F0067C74D /* GameViewController.swift */; };
 		8BDD8A552AC5BB52001ACDE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDD8A542AC5BB52001ACDE4 /* AppDelegate.swift */; };
 		8BDD8A572AC5BB52001ACDE4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDD8A562AC5BB52001ACDE4 /* SceneDelegate.swift */; };
 		8BDD8A592AC5BB52001ACDE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BDD8A582AC5BB52001ACDE4 /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8B1E8BA22AC7012F0067C74D /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		8BDD8A512AC5BB52001ACDE4 /* fun-with-flags.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "fun-with-flags.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8BDD8A542AC5BB52001ACDE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8BDD8A562AC5BB52001ACDE4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				8BDD8A582AC5BB52001ACDE4 /* ViewController.swift */,
+				8B1E8BA22AC7012F0067C74D /* GameViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8B1E8BA32AC7012F0067C74D /* GameViewController.swift in Sources */,
 				8BDD8A592AC5BB52001ACDE4 /* ViewController.swift in Sources */,
 				8BDD8A552AC5BB52001ACDE4 /* AppDelegate.swift in Sources */,
 				8BDD8A572AC5BB52001ACDE4 /* SceneDelegate.swift in Sources */,
