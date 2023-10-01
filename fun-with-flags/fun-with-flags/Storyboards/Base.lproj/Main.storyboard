@@ -91,11 +91,16 @@
                             <constraint firstItem="saS-vi-ybT" firstAttribute="top" secondItem="YR7-gO-xRx" secondAttribute="bottom" constant="20" id="qGJ-t9-B8L"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Game" id="W3M-CQ-cJH"/>
+                    <navigationItem key="navigationItem" title="Game" id="W3M-CQ-cJH">
+                        <barButtonItem key="leftBarButtonItem" enabled="NO" title="Score: 0" id="iLJ-rZ-bbT">
+                            <color key="tintColor" systemColor="labelColor"/>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="button1" destination="YR7-gO-xRx" id="zYw-TY-11q"/>
                         <outlet property="button2" destination="saS-vi-ybT" id="cTU-vv-Rtg"/>
                         <outlet property="button3" destination="q7p-Tk-1iP" id="GDR-jj-s5u"/>
+                        <outlet property="scoreBarButton" destination="iLJ-rZ-bbT" id="xjV-mK-dAc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="181-f1-mz8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -124,6 +129,9 @@
     </scenes>
     <resources>
         <image name="us" width="200" height="100"/>
+        <systemColor name="labelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

@@ -6,9 +6,15 @@ class GameViewController: UIViewController {
     @IBOutlet var button2: UIButton!
     @IBOutlet var button3: UIButton!
     
+    @IBOutlet var scoreBarButton: UIBarButtonItem!
+    
     var countries = [String]()
     
-    var score = 0
+    var score = 0 {
+        didSet {
+            scoreBarButton.title = "Score: \(score)"
+        }
+    }
     var correctAnswer = 0 {
         didSet {
             let country = countries[correctAnswer]
@@ -41,15 +47,18 @@ class GameViewController: UIViewController {
     
     @IBAction func buttonTapped(_ sender: UIButton) {
         var title: String
+        var message: String
 
         if sender.tag == correctAnswer {
             title = "🥳 Correct"
+            message = ""
             score += 1
         } else {
             title = "🙁 Wrong"
+            message = ""
         }
         
-        let ac = UIAlertController(title: title, message: "Your score is \(score).", preferredStyle: .alert)
+        let ac = UIAlertController(title: title, message: message, preferredStyle: .alert)
         ac.addAction(UIAlertAction(title: "Continue", style: .default, handler: askQuestion))
         
         present(ac, animated: true)
